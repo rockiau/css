@@ -322,11 +322,11 @@ div[data-hover-element="header_search"]{
 
     background:
 
-      url('https://i.postimg.cc/900s0TGd/L1.png') left center / auto 100% no-repeat,
+      url('https://i.postimg.cc/SQT5npW2/Lone.png') left center / auto 100% no-repeat,
 
-      url('https://i.postimg.cc/3NqVvRB0/R1.png') right center / auto 100% no-repeat,
+      url('https://i.postimg.cc/dQHXhK8G/Rone.png') right center / auto 100% no-repeat,
 
-      url('https://i.postimg.cc/QCzwTtbF/back-1.png') center center / auto 100% repeat-x !important;
+      url('https://i.postimg.cc/QN4PFrp1/meio.png') center center / auto 100% repeat-x !important;
 
     box-shadow:none !important;
 
@@ -1370,9 +1370,9 @@ div[data-hover-element="header_search"]::before{
         auto 100% !important;
 
     background-image:
-        url('https://i.postimg.cc/900s0TGd/L1.png'),
-        url('https://i.postimg.cc/3NqVvRB0/R1.png'),
-        url('https://i.postimg.cc/QCzwTtbF/back-1.png') !important;
+        url('https://i.postimg.cc/SQT5npW2/Lone.png'),
+        url('https://i.postimg.cc/dQHXhK8G/Rone.png'),
+        url('https://i.postimg.cc/QN4PFrp1/meio.png') !important;
 }
 
 /* HOVER */
@@ -1404,9 +1404,9 @@ div[data-hover-element="header_search"]::after{
         auto 100% !important;
 
     background-image:
-        url('https://i.postimg.cc/tJJ8JPhd/L2.png'),
-        url('https://i.postimg.cc/yxGtZdPR/R2.png'),
-        url('https://i.postimg.cc/KjWwMzNK/back-2.png') !important;
+        url('https://i.postimg.cc/gcS5xPvL/Lone-efc.png'),
+        url('https://i.postimg.cc/WpWKdPMr/Rone-efc.png'),
+        url('https://i.postimg.cc/gcS5xPvh/meio-efc.png') !important;
 }
 
 div[data-hover-element="header_search"]:hover::after{
