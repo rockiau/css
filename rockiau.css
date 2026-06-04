@@ -57,7 +57,7 @@ header,
       rgba(0,0,0,.78)
     ),
 
-    url('https://i.postimg.cc/wj2g1wJB/stilerk.jpg')
+    url('https://i.postimg.cc/tCzzsd0L/bg-imagem.jpg')
 
     center center / cover no-repeat !important;
 
@@ -300,7 +300,7 @@ div[data-hover-element="header_search"]{
 
     border:none !important;
 
-    min-height:100px !important;
+    min-height:120px !important;
 
     padding:0 34px !important;
 
