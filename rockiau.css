@@ -1370,9 +1370,9 @@ div[data-hover-element="header_search"]::before{
         auto 100% !important;
 
     background-image:
-        url('https://i.postimg.cc/rFsZcpCy/d4-button-primary-left-base-2x.webp'),
-        url('https://i.postimg.cc/RVYs0zXr/d4-button-primary-right-base-2x.webp'),
-        url('https://i.postimg.cc/sDL62Rws/d4-button-primary-tile-base-2x.jpg') !important;
+        url('https://i.postimg.cc/900s0TGd/L1.png'),
+        url('https://i.postimg.cc/3NqVvRB0/R1.png'),
+        url('https://i.postimg.cc/QCzwTtbF/back-1.png') !important;
 }
 
 /* HOVER */
@@ -1404,9 +1404,9 @@ div[data-hover-element="header_search"]::after{
         auto 100% !important;
 
     background-image:
-        url('https://i.postimg.cc/4N0L3Twr/d4-button-primary-left-hover-2x.webp'),
-        url('https://i.postimg.cc/qMFb7djr/d4-button-primary-right-hover-2x.webp'),
-        url('https://i.postimg.cc/5Nr7tMn4/d4-button-primary-tile-hover-2x.webp') !important;
+        url('https://i.postimg.cc/tJJ8JPhd/L2.png'),
+        url('https://i.postimg.cc/yxGtZdPR/R2.png'),
+        url('https://i.postimg.cc/KjWwMzNK/back-2.png') !important;
 }
 
 div[data-hover-element="header_search"]:hover::after{
