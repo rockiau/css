@@ -1,0 +1,438 @@
+/* =========================================================
+   Rock🗲Kiau Clothing Co.
+   © Direit Luciano Monteiro Silva
+   Uso: www.rockiau.com
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --rk-bg:#ffffff;
+  --rk-bg-soft:#f6f4ef;
+  --rk-bg-dark:#090909;
+  --rk-text:#111111;
+  --rk-muted:#666666;
+  --rk-border:#e7e2d8;
+  --rk-red:#d71920;
+  --rk-red-dark:#9e1117;
+  --rk-gold:#c99a2e;
+  --rk-radius:18px;
+  --rk-radius-sm:10px;
+  --rk-shadow:0 12px 35px rgba(0,0,0,.10);
+  --rk-font:'Inter',Arial,sans-serif;
+  --rk-title:'Bungee',Impact,sans-serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0!important;
+  background:var(--rk-bg)!important;
+  color:var(--rk-text)!important;
+  font-family:var(--rk-font)!important;
+  letter-spacing:.01em;
+}
+
+/* =========================
+   TOPO / CABEÇALHO
+   ========================= */
+#cabecalho,
+header,
+.header,
+[data-section="header"]{
+  background:rgba(255,255,255,.96)!important;
+  border-bottom:1px solid var(--rk-border)!important;
+  box-shadow:0 4px 22px rgba(0,0,0,.04)!important;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  position:relative;
+  z-index:50;
+}
+
+/* Logo mais limpa */
+#cabecalho img,
+header img{
+  max-height:76px!important;
+  object-fit:contain!important;
+}
+
+/* Menu horizontal premium */
+#cabecalho nav,
+header nav,
+.menu,
+.menu ul,
+nav ul{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  flex-wrap:wrap!important;
+}
+
+#cabecalho a,
+header a,
+.menu a,
+nav a{
+  color:var(--rk-text)!important;
+  text-decoration:none!important;
+  font-family:var(--rk-font)!important;
+  font-weight:700!important;
+  font-size:13px!important;
+  letter-spacing:.04em!important;
+  text-transform:uppercase!important;
+  padding:10px 13px!important;
+  border-radius:999px!important;
+  transition:all .22s ease!important;
+}
+
+#cabecalho a:hover,
+header a:hover,
+.menu a:hover,
+nav a:hover{
+  background:var(--rk-bg-dark)!important;
+  color:#fff!important;
+  transform:translateY(-1px);
+}
+
+/* Destaque para outlet, promo ou última categoria */
+.menu a[href*="outlet"],
+.menu a[href*="promocao"],
+.menu a[href*="promo"],
+nav a[href*="outlet"],
+nav a[href*="promocao"],
+nav a[href*="promo"]{
+  background:var(--rk-red)!important;
+  color:#fff!important;
+}
+
+/* =========================
+   BUSCA
+   ========================= */
+#cabecalho input[type="search"],
+#cabecalho input[name="search"],
+header input[type="search"],
+input[name="search"]{
+  min-height:42px!important;
+  border:1px solid var(--rk-border)!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  color:var(--rk-text)!important;
+  padding:0 18px!important;
+  font-size:14px!important;
+  outline:none!important;
+  box-shadow:0 6px 20px rgba(0,0,0,.04)!important;
+}
+
+#cabecalho input::placeholder,
+header input::placeholder{
+  color:#999!important;
+}
+
+/* =========================
+   BANNERS / HERO
+   ========================= */
+.banner,
+.hero,
+.vitrine-banner,
+[class*="banner"],
+[class*="hero"]{
+  border-radius:0!important;
+  overflow:hidden!important;
+}
+
+.banner img,
+.hero img,
+[class*="banner"] img{
+  width:100%!important;
+  display:block!important;
+  object-fit:cover!important;
+}
+
+/* Títulos principais */
+h1,h2,.titulo,.title,[class*="title"],[class*="titulo"]{
+  font-family:var(--rk-title)!important;
+  color:var(--rk-text)!important;
+  letter-spacing:.02em!important;
+  line-height:1.05!important;
+}
+
+h1,.titulo-principal{
+  font-size:clamp(30px,4vw,58px)!important;
+  text-align:center!important;
+  margin:28px auto 16px!important;
+}
+
+h2{
+  font-size:clamp(24px,3vw,42px)!important;
+  margin:26px auto 14px!important;
+}
+
+/* =========================
+   VITRINE / CARDS DE PRODUTO
+   ========================= */
+.produto,
+.product,
+.product-card,
+[class*="produto"],
+[class*="product-card"]{
+  background:#fff!important;
+  border:1px solid var(--rk-border)!important;
+  border-radius:var(--rk-radius)!important;
+  overflow:hidden!important;
+  box-shadow:0 8px 28px rgba(0,0,0,.06)!important;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease!important;
+}
+
+.produto:hover,
+.product:hover,
+.product-card:hover,
+[class*="produto"]:hover,
+[class*="product-card"]:hover{
+  transform:translateY(-5px)!important;
+  box-shadow:var(--rk-shadow)!important;
+  border-color:#d6c7a5!important;
+}
+
+.produto img,
+.product img,
+.product-card img,
+[class*="produto"] img{
+  width:100%!important;
+  transition:transform .35s ease!important;
+}
+
+.produto:hover img,
+.product:hover img,
+.product-card:hover img{
+  transform:scale(1.035)!important;
+}
+
+/* Nome do produto */
+.produto h2,
+.produto h3,
+.product h2,
+.product h3,
+.product-card h2,
+.product-card h3,
+[class*="produto"] h2,
+[class*="produto"] h3{
+  font-family:var(--rk-font)!important;
+  font-size:15px!important;
+  font-weight:800!important;
+  line-height:1.25!important;
+  text-transform:none!important;
+  padding:12px 14px 4px!important;
+  margin:0!important;
+}
+
+/* Preço */
+.preco,
+.price,
+[class*="preco"],
+[class*="price"]{
+  color:var(--rk-red)!important;
+  font-weight:900!important;
+  font-size:18px!important;
+  padding:4px 14px 14px!important;
+}
+
+/* Grade de produtos */
+.lista-produtos,
+.products,
+.product-list,
+[class*="products"],
+[class*="produto-lista"]{
+  gap:22px!important;
+}
+
+/* =========================
+   BOTÕES
+   ========================= */
+button,
+.botao,
+.btn,
+.button,
+a[class*="btn"],
+input[type="submit"]{
+  border-radius:999px!important;
+  border:none!important;
+  background:var(--rk-bg-dark)!important;
+  color:#fff!important;
+  font-weight:800!important;
+  text-transform:uppercase!important;
+  letter-spacing:.045em!important;
+  padding:13px 22px!important;
+  transition:all .22s ease!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.16)!important;
+}
+
+button:hover,
+.botao:hover,
+.btn:hover,
+.button:hover,
+a[class*="btn"]:hover,
+input[type="submit"]:hover{
+  background:var(--rk-red)!important;
+  color:#fff!important;
+  transform:translateY(-2px)!important;
+}
+
+/* Botão comprar em destaque */
+button[class*="comprar"],
+.btn-comprar,
+a[href*="carrinho"],
+a[href*="checkout"]{
+  background:linear-gradient(135deg,var(--rk-red),var(--rk-red-dark))!important;
+  color:#fff!important;
+}
+
+/* =========================
+   FAIXA DE BENEFÍCIOS
+   ========================= */
+.beneficios,
+.features,
+[class*="beneficio"],
+[class*="feature"]{
+  background:var(--rk-bg-soft)!important;
+  border-top:1px solid var(--rk-border)!important;
+  border-bottom:1px solid var(--rk-border)!important;
+  padding:18px!important;
+  gap:14px!important;
+}
+
+.beneficios *,
+.features *,
+[class*="beneficio"] *,
+[class*="feature"] *{
+  font-size:13px!important;
+  font-weight:700!important;
+  color:var(--rk-text)!important;
+}
+
+/* =========================
+   MODAL / LOCALIZAÇÃO / POPUPS
+   ========================= */
+.modal,
+.popup,
+.dialog,
+[class*="modal"],
+[class*="popup"]{
+  border-radius:var(--rk-radius)!important;
+  border:1px solid var(--rk-border)!important;
+  box-shadow:0 30px 80px rgba(0,0,0,.25)!important;
+}
+
+.modal h2,
+.popup h2,
+.dialog h2{
+  font-family:var(--rk-title)!important;
+}
+
+/* =========================
+   RODAPÉ
+   ========================= */
+footer,
+.rodape,
+#rodape{
+  background:#070707!important;
+  color:#fff!important;
+  border-top:4px solid var(--rk-red)!important;
+  padding-top:32px!important;
+}
+
+footer a,
+.rodape a,
+#rodape a{
+  color:#fff!important;
+  text-decoration:none!important;
+  transition:color .2s ease!important;
+}
+
+footer a:hover,
+.rodape a:hover,
+#rodape a:hover{
+  color:var(--rk-gold)!important;
+}
+
+footer h2,
+footer h3,
+.rodape h2,
+.rodape h3{
+  color:#fff!important;
+  font-family:var(--rk-title)!important;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width:768px){
+  #cabecalho,
+  header{
+    padding:8px 10px!important;
+  }
+
+  #cabecalho nav,
+  header nav,
+  .menu,
+  nav ul{
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    overflow-x:auto!important;
+    padding:8px 4px!important;
+    scroll-snap-type:x mandatory;
+  }
+
+  #cabecalho a,
+  header a,
+  .menu a,
+  nav a{
+    white-space:nowrap!important;
+    font-size:12px!important;
+    padding:9px 12px!important;
+    scroll-snap-align:start;
+  }
+
+  h1,.titulo-principal{
+    font-size:32px!important;
+  }
+
+  .produto,
+  .product,
+  .product-card,
+  [class*="produto"],
+  [class*="product-card"]{
+    border-radius:14px!important;
+  }
+
+  button,
+  .botao,
+  .btn,
+  .button,
+  a[class*="btn"]{
+    width:auto!important;
+    min-height:42px!important;
+    padding:11px 18px!important;
+    font-size:12px!important;
+  }
+}
+
+/* =========================
+   AJUSTE FINO ROCK KIAU
+   ========================= */
+::selection{
+  background:var(--rk-red)!important;
+  color:#fff!important;
+}
+
+/* Dá aparência mais premium a seções comuns */
+section,
+.secao,
+.section{
+  position:relative;
+}
+
+/* Evita estouro lateral em mobile */
+body,
+html{
+  overflow-x:hidden!important;
+}
