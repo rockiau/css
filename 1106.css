@@ -1,0 +1,882 @@
+/* ==================================================
+   ROCK KIAU — ROCKWEAR PREMIUM INSPIRED
+   Luciano Monteiro Silva - Designer Grafico
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+:root{
+  --rk-black:#000;
+  --rk-white:#fff;
+  --rk-off:#f4f4f4;
+  --rk-gray:#111;
+  --rk-soft:#777;
+}
+
+/* RESET */
+*{
+  box-sizing:border-box !important;
+}
+
+html,
+body{
+  margin:0 !important;
+  padding:0 !important;
+  background:#fff !important;
+  color:#000 !important;
+  font-family:'Inter', Arial, sans-serif !important;
+}
+
+/* ==================================================
+   CABEÇALHO LIMPO
+================================================== */
+
+
+header,
+#header,
+#cabecalho,
+.cabecalho{
+
+  position:relative !important;
+
+  /* ===== HEAD IMG ===== */
+  min-height:250px !important;
+
+  height:250px !important;
+
+  width:100% !important;
+
+  overflow:hidden !important;
+
+  background:
+
+    linear-gradient(
+      rgba(0,0,0,.28),
+      rgba(0,0,0,.78)
+    ),
+
+    url('https://i.postimg.cc/fL39xQts/web-br.webp')
+
+    center center / cover no-repeat !important;
+
+  background-color:transparent !important;
+
+  border:none !important;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.65) !important;
+
+  z-index:1000 !important;
+}
+
+/* ==========================================
+   LOGO ROCK KIAU PREMIUM
+========================================== */
+
+.logo.max-h-\[60px\]{
+
+  position:absolute !important;
+
+  top:10px !important;
+
+  left:50% !important;
+
+  transform:translateX(-50%) !important;
+
+  max-height:300px !important;
+
+  width:auto !important;
+
+  height:auto !important;
+
+  z-index:10002 !important;
+
+  transition:all .3s ease !important;
+
+  filter:drop-shadow(0 4px 12px rgba(0,0,0,.35));
+
+}
+
+/* Hover suave */
+.logo.max-h-\[60px\]:hover{
+
+  transform:translateX(-50%) scale(1.03) !important;
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .logo.max-h-\[60px\]{
+
+    max-height:180px !important;
+
+    top:5px !important;
+
+  }
+
+}
+
+/* ==================================================
+   MENU ROCK KIAU TRANSPARENTE / PREMIUM
+================================================== */
+
+
+/* Cabeçalho */
+header,
+#header,
+#cabecalho,
+.cabecalho {
+  position: relative !important;
+  z-index: 9998 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Container do menu */
+.menu,
+.menu.superior,
+#cabecalho .menu,
+#menu,
+.navbar,
+header .menu {
+  position: relative !important;
+  z-index: 9999 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 8px 0 !important;
+}
+
+/* Lista do menu */
+.menu ul,
+.menu.superior ul,
+#menu ul,
+.navbar ul {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 34px !important;
+  flex-wrap: wrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  background: transparent !important;
+}
+
+/* Itens */
+.menu li,
+.menu.superior li,
+#menu li,
+.navbar li {
+  position: relative !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Links */
+.menu a,
+.menu.superior a,
+#menu a,
+.navbar a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 8px 0 !important;
+  font-family: 'Bungee', sans-serif !important;
+  font-size: 12px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  transition: color .25s ease, opacity .25s ease !important;
+}
+
+/* Hover */
+.menu a:hover,
+.menu.superior a:hover,
+#menu a:hover,
+.navbar a:hover {
+  color: #d6d6d6 !important;
+  background: transparent !important;
+  opacity: .85 !important;
+  transform: none !important;
+}
+
+/* Remove fundos internos sem destruir ícones */
+.menu li,
+.menu a,
+.menu span,
+.menu strong,
+.menu i,
+.menu svg,
+.menu.superior li,
+.menu.superior a,
+.menu.superior span {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Remove linhas e pseudo-elementos */
+.menu::before,
+.menu::after,
+.menu li::before,
+.menu li::after,
+.menu a::before,
+.menu a::after,
+.menu.superior::before,
+.menu.superior::after,
+.menu.superior li::before,
+.menu.superior li::after,
+.menu.superior a::before,
+.menu.superior a::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Submenus */
+.menu ul ul,
+.menu li ul,
+.menu .submenu,
+.menu .dropdown-menu,
+.menu .dropdown {
+  position: absolute !important;
+  z-index: 99999 !important;
+  background: rgba(0, 0, 0, .92) !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+  border-radius: 10px !important;
+  padding: 12px !important;
+}
+
+/* Links dentro do submenu */
+.menu ul ul a,
+.menu li ul a,
+.menu .submenu a,
+.menu .dropdown-menu a {
+  color: #ffffff !important;
+  padding: 10px 14px !important;
+  white-space: nowrap !important;
+}
+
+/* Evita banners por cima do menu */
+.slider,
+.banner,
+.carousel,
+.swiper,
+.vitrine,
+.produtos,
+.listagem,
+main,
+#corpo,
+footer,
+.rodape {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Menu fixo */
+.menu-fixo,
+.menu-flutuante {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu ul,
+  .menu.superior ul,
+  #menu ul,
+  .navbar ul {
+    gap: 16px !important;
+  }
+
+  .menu a,
+  .menu.superior a,
+  #menu a,
+  .navbar a {
+    font-size: 10px !important;
+    letter-spacing: .8px !important;
+    padding: 6px 0 !important;
+  }
+}
+
+/* ==================================================
+   SEARCH BAR PREMIUM ROCK KIAU
+================================================== */
+
+/* CONTAINER */
+div[data-hover-element="header_search"]{
+
+    position:relative !important;
+
+    background:transparent !important;
+
+    border:none !important;
+
+    min-height:58px !important;
+
+    padding:0 34px !important;
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:space-between !important;
+
+    gap:14px !important;
+
+    width:100% !important;
+
+    max-width:450px !important;
+
+    overflow:hidden !important;
+
+    /* ===== menu img ===== */
+
+    background:
+
+      url('https://i.postimg.cc/zGSjgcJm/d4-button-primary-left-base-2x.webp') left center / auto 100% no-repeat,
+
+      url('https://i.postimg.cc/Z5FcdMTt/d4-button-primary-right-base-2x.webp') right center / auto 100% no-repeat,
+
+      url('https://i.postimg.cc/zGSjgcJY/d4-button-primary-tile-base-2x.webp') center center / auto 100% repeat-x !important;
+
+    box-shadow:none !important;
+
+    transition:
+      transform .25s ease,
+      filter .25s ease !important;
+}
+
+/* HOVER */
+div[data-hover-element="header_search"]:hover{
+
+    transform:translateY(-1px) !important;
+
+    filter:
+      brightness(1.08)
+      contrast(1.04) !important;
+}
+
+/* INPUT */
+div[data-hover-element="header_search"] input{
+
+    background:transparent !important;
+
+    border:none !important;
+
+    outline:none !important;
+
+    box-shadow:none !important;
+
+    width:100% !important;
+
+    height:100% !important;
+
+    color:#B2957F !important;
+
+    font-family:'Bungee', sans-serif !important;
+
+    font-size:20px !important;
+
+    font-weight:400 !important;
+
+    letter-spacing:1px !important;
+
+    text-transform:uppercase !important;
+
+    padding:0 10px !important;
+
+    appearance:none !important;
+
+    border-radius:0 !important;
+
+    /* EFEITO TEXTO */
+
+    -webkit-text-stroke:1px rgba(35,15,8,.95) !important;
+
+    text-shadow:
+
+      -1px -1px 0 #2b1208,
+       1px -1px 0 #2b1208,
+      -1px  1px 0 #2b1208,
+       1px  1px 0 #2b1208,
+
+       0 2px 0 #3a1a0d,
+       0 4px 6px rgba(0,0,0,.85),
+
+       0 0 2px rgba(255,245,220,.35),
+       0 0 8px rgba(255,220,170,.12) !important;
+}
+
+/* PLACEHOLDER */
+div[data-hover-element="header_search"] input::placeholder{
+
+    color:#B2957F !important;
+
+    opacity:.65 !important;
+
+    font-size:16px !important;
+
+    font-weight:400 !important;
+
+    letter-spacing:.2px !important;
+}
+
+* ÍCONE SVG */
+div[data-hover-element="header_search"] svg{
+
+    width:22px !important;
+
+    height:22px !important;
+
+    min-width:22px !important;
+
+    stroke:#c0ac72 !important;
+
+    stroke-width:1.8px !important;
+
+    opacity:.92 !important;
+
+    cursor:pointer !important;
+
+    transition:all .25s ease !important;
+}
+
+/* REMOVE ESTILOS INLINE */
+div[data-hover-element="header_search"] *{
+
+    border-color:transparent !important;
+
+    background-color:transparent !important;
+
+    box-shadow:none !important;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    div[data-hover-element="header_search"]{
+
+        min-height:52px !important;
+
+        padding:0 26px !important;
+
+        max-width:100% !important;
+    }
+
+    div[data-hover-element="header_search"] input{
+
+        font-size:14px !important;
+    }
+}
+
+/* ==================================================
+   BANNERS / SLIDE EDITORIAL
+================================================== */
+
+.banner,
+.banner img,
+.carousel,
+.carousel img,
+.swiper,
+.swiper img{
+  width:100% !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  object-fit:cover !important;
+}
+
+.banner img,
+.carousel img,
+.swiper img{
+  filter:contrast(1.05) saturate(.95) !important;
+}
+
+/* ==================================================
+   CONTAINER GERAL
+================================================== */
+
+.container,
+.conteiner,
+main,
+#corpo{
+  max-width:1440px !important;
+  margin:0 auto !important;
+  padding-left:24px !important;
+  padding-right:24px !important;
+}
+
+/* ==================================================
+   TÍTULOS
+================================================== */
+
+h1,
+h2,
+h3,
+.titulo,
+.titulo-categoria,
+.secao-principal h2{
+  font-family:'Bungee', sans-serif !important;
+  color:#000 !important;
+  text-transform:uppercase !important;
+  letter-spacing:1px !important;
+  text-align:center !important;
+  border:none !important;
+  margin:42px 0 28px !important;
+}
+
+
+/* ==================================================
+   GRID DE PRODUTOS — ROCK KIAU PREMIUM
+================================================== */
+
+.listagem ul,
+.listagem .produtos,
+.vitrine,
+.produtos {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 32px !important;
+  width: 100% !important;
+  max-width: 1380px !important;
+  margin: 0 auto !important;
+  padding: 38px 20px !important;
+  list-style: none !important;
+}
+
+/* CARD */
+.listagem .produto,
+.produto,
+.produto-carrossel {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,.06) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.06) !important;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+}
+
+/* HOVER */
+.listagem .produto:hover,
+.produto:hover,
+.produto-carrossel:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 36px rgba(0,0,0,.12) !important;
+}
+
+/* IMAGEM */
+.produto img,
+.listagem .produto img,
+.produto-carrossel img {
+  width: 100% !important;
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  background: #f4f4f4 !important;
+  transition: transform .35s ease, filter .35s ease !important;
+}
+
+/* ZOOM */
+.produto:hover img,
+.listagem .produto:hover img,
+.produto-carrossel:hover img {
+  transform: scale(1.035) !important;
+  filter: contrast(1.06) saturate(1.04) !important;
+}
+
+/* INFORMAÇÕES */
+.produto .info-produto,
+.produto .info,
+.produto .dados-produto,
+.produto .conteudo {
+  padding: 16px 14px 18px !important;
+  text-align: center !important;
+}
+
+/* NOME */
+.produto .nome-produto,
+.produto .nome,
+.produto h3,
+.produto h4 {
+  font-family: 'New Rocker', serif !important;
+  font-size: clamp(15px, 1.3vw, 20px) !important;
+  font-weight: 400 !important;
+  line-height: 1.15 !important;
+  letter-spacing: .8px !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  margin: 8px 0 6px !important;
+}
+
+/* PREÇO */
+.preco-produto,
+.produto .preco,
+.preco-promocional,
+.produto .valor,
+.produto .price {
+  font-family: 'New Rocker', serif !important;
+  font-size: clamp(16px, 1.2vw, 19px) !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  margin: 6px 0 14px !important;
+}
+
+/* BOTÃO */
+.produto .botao,
+.produto .btn,
+.produto button,
+.produto input[type="submit"] {
+  width: 100% !important;
+  min-height: 46px !important;
+  margin-top: auto !important;
+  border: none !important;
+  border-radius: 0 0 14px 14px !important;
+  background: #111 !important;
+  color: #fff !important;
+  font-family: 'New Rocker', serif !important;
+  font-size: 18px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  transition: background .25s ease, color .25s ease !important;
+}
+
+.produto .botao:hover,
+.produto .btn:hover,
+.produto button:hover,
+.produto input[type="submit"]:hover {
+  background: #2a2a2a !important;
+  color: #fff !important;
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+  .listagem ul,
+  .listagem .produtos,
+  .vitrine,
+  .produtos {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .listagem ul,
+  .listagem .produtos,
+  .vitrine,
+  .produtos {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    padding: 24px 10px !important;
+  }
+
+  .listagem .produto,
+  .produto,
+  .produto-carrossel {
+    border-radius: 10px !important;
+  }
+
+  .produto .info-produto,
+  .produto .info,
+  .produto .dados-produto,
+  .produto .conteudo {
+    padding: 12px 8px 14px !important;
+  }
+
+  .produto .botao,
+  .produto .btn,
+  .produto button,
+  .produto input[type="submit"] {
+    min-height: 42px !important;
+    font-size: 15px !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+}
+
+/* CELULAR PEQUENO */
+@media (max-width: 420px) {
+  .listagem ul,
+  .listagem .produtos,
+  .vitrine,
+  .produtos {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    padding: 20px 8px !important;
+  }
+}
+
+/* ==================================================
+   SLIDE PROFISSIONAL ROCK KIAU
+================================================== */
+
+.banner,
+.banner-home,
+.carousel,
+.carrossel,
+.slider,
+.slideshow,
+.swiper,
+.swiper-container,
+.slick-slider,
+.embla,
+[data-carousel],
+[class*="banner"],
+[class*="slider"],
+[class*="carousel"],
+[class*="carrossel"]{
+  position:relative !important;
+  overflow:visible !important;
+  z-index:1 !important;
+  margin-top:38px !important;
+  margin-bottom:38px !important;
+}
+
+.banner::before,
+.banner-home::before,
+.carousel::before,
+.carrossel::before,
+.slider::before,
+.slideshow::before,
+.swiper::before,
+.swiper-container::before,
+.slick-slider::before,
+.embla::before,
+[data-carousel]::before,
+[class*="banner"]::before,
+[class*="slider"]::before,
+[class*="carousel"]::before,
+[class*="carrossel"]::before{
+  content:"" !important;
+  position:absolute !important;
+  top:-38px !important;
+  left:0 !important;
+  width:100% !important;
+  height:38px !important;
+  background:url('https://i.postimg.cc/65PjQNYB/d4-button-primary-tile-hover.webp') center center / 100% 38px repeat-x !important;
+  z-index:20 !important;
+  pointer-events:none !important;
+}
+
+.banner::after,
+.banner-home::after,
+.carousel::after,
+.carrossel::after,
+.slider::after,
+.slideshow::after,
+.swiper::after,
+.swiper-container::after,
+.slick-slider::after,
+.embla::after,
+[data-carousel]::after,
+[class*="banner"]::after,
+[class*="slider"]::after,
+[class*="carousel"]::after,
+[class*="carrossel"]::after{
+  content:"" !important;
+  position:absolute !important;
+  bottom:-38px !important;
+  left:0 !important;
+  width:100% !important;
+  height:38px !important;
+  background:url('https://i.postimg.cc/65PjQNYB/d4-button-primary-tile-hover.webp') center center / 100% 38px repeat-x !important;
+  z-index:20 !important;
+  pointer-events:none !important;
+}
+
+/* ==================================================
+   TÍTULOS DOS PRODUTOS
+================================================== */
+
+/* ==================================================
+   CENTRALIZAR TÍTULOS DOS PRODUTOS DO GRID
+================================================== */
+
+.titulo,
+.titulo a,
+.nome-produto,
+.product-name,
+.product-title,
+.line-clamp-2,
+.font-rubik.font-medium,
+.flex.flex-row.justify-between{
+
+    text-align:center !important;
+
+    justify-content:center !important;
+
+    align-items:center !important;
+
+    width:100% !important;
+
+    margin:0 auto !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+}
+
+/* LINKS DOS TÍTULOS */
+.titulo a,
+.nome-produto a,
+.product-title a{
+
+    text-align:center !important;
+
+    justify-content:center !important;
+
+    width:100% !important;
+
+    display:block !important;
+
+}
+
+/* ==================================================
+   TÍTULO DO GRID EM 50PX
+================================================== */
+
+.titulo,
+.titulo a{
+
+    font-size:40px !important;
+
+    line-height:1 !important;
+
+    text-align:center !important;
+
+    font-family:'Bungee', sans-serif !important;
+
+    text-transform:uppercase !important;
+
+    letter-spacing:3px !important;
+
+    margin-top:14px !important;
+
+    padding:0 10px !important;
+
+
+}
+
